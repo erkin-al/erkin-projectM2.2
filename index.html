@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Расчёт банковского вклада с капитализацией</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+   
+
+    <main>
+        <div>
+            <h1>
+                Подбор оптимального вклада
+            </h1>
+            <div class="form">
+
+                <div class="forsumm">
+                    <p>
+                        Начальная сумма вклада (Р)
+                    </p>
+                    <input type="text" id="summ" />
+                </div>
+                <div class="fordeposit">
+                    <p>
+                        Сумма периодичного пополнения (Р)
+                    </p>
+                    <input type="text" id="deposit" />
+                </div>
+                <div class="forterm">
+                    <p>
+                        Срок вклада (в месяцах)
+                    </p>
+                    <input type="text" id="term" />
+                </div>
+                <div class="forcaurrency">
+                    <p>
+                        Валюта
+                    </p>
+                    <select id="currency">
+                        <option value="RUB">RUB</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </div>
+                
+                <button class="button" id="button">Рассчитать</button>
+                
+            </div>
+            <table id= "main-table">
+                <tr>
+                    <td>Название банка</td>
+                    <td>вклад</td>
+                    <td>процент</td>
+                    <td>итоговая сумма</td>
+
+                </tr>
+
+            </table>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
